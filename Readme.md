@@ -1,7 +1,7 @@
 # Личный проект «Пиксель хантер» [![Build status][travis-image]][travis-url]
 
 - Студент: [Иван Горбунов](https://up.htmlacademy.ru/ecmascript/7/user/236647).
-- Наставник: `Дмитрий Спиридонов`.
+- Наставник: [Дмитрий Спиридонов](https://htmlacademy.ru/profile/sydd).
 
 ---
 
