@@ -1,4 +1,6 @@
-const element = `
+import { addScreenElement, generateScreen } from '../util.js';
+import gameThreeScreen from './game-3-screen.js';
+const template = `
 <header class="header">
   <button class="back">
     <span class="visually-hidden">Вернуться к началу</span>
@@ -45,4 +47,13 @@ const element = `
   </ul>
 </section>`;
 
+const element = addScreenElement(template);
+
+const answerBtn = element.querySelectorAll(`.game__answer`);
+
+Array.from(answerBtn).forEach((el) => {
+  el.addEventListener(`click`, () => {
+    generateScreen(gameThreeScreen);
+  });
+});
 export default element;
