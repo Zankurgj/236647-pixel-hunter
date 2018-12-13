@@ -1,27 +1,7 @@
-import { changeScreen } from './util.js';
+import { generateScreen } from './util.js';
+import introSreen from './screens/intro-screen.js';
 
-changeScreen(`kek`);
-
-// const arrowsWrapper = document.createElement(`div`);
-// arrowsWrapper.className = `arrows__wrap`;
-// arrowsWrapper.innerHTML = `
-// <style>
-//     .arrows__wrap {
-//       position: absolute;
-//       top: 95px;
-//       left: 50%;
-//       margin-left: -56px;
-//     }
-//     .arrows__btn {
-//       background: none;
-//       border: 2px solid black;
-//       padding: 5px 20px;
-//     }
-//   </style>
-//   <button class="arrows__btn" leftControlArrow><-</button>
-//   <button class="arrows__btn" rightControlArrow>-></button>
-// `;
-
+generateScreen(introSreen);
 // const KeyCode = {
 //   RIGHT_ARROW: 39,
 //   LEFT_ARROW: 37
