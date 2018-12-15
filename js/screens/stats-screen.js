@@ -1,4 +1,4 @@
-import { addScreenElement } from '../util.js';
+import {addScreenElement} from '../util.js';
 
 const template = `
 <header class="header">

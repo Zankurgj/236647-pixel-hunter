@@ -1,4 +1,4 @@
-import { addScreenElement, generateScreen } from '../util.js';
+import {addScreenElement, generateScreen} from '../util.js';
 import gameTwoScreen from './game-2-screen.js';
 
 

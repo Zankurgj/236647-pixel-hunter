@@ -1,4 +1,4 @@
-import { addScreenElement, generateScreen } from '../util.js';
+import {addScreenElement, generateScreen} from '../util.js';
 import gameThreeScreen from './game-3-screen.js';
 const template = `
 <header class="header">
@@ -56,4 +56,6 @@ Array.from(answerBtn).forEach((el) => {
     generateScreen(gameThreeScreen);
   });
 });
+
+
 export default element;

@@ -1,4 +1,4 @@
-import { generateScreen, addScreenElement } from '../util.js';
+import {generateScreen, addScreenElement} from '../util.js';
 import greetingScreen from './greeting-screen.js';
 
 const template = `
@@ -15,6 +15,5 @@ const agreeButton = element.querySelector(`.intro__asterisk`);
 agreeButton.addEventListener(`click`, () => {
   generateScreen(greetingScreen);
 });
-
 
 export default element;

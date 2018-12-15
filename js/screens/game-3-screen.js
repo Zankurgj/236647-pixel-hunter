@@ -1,4 +1,4 @@
-import { addScreenElement, generateScreen } from '../util.js';
+import {addScreenElement, generateScreen} from '../util.js';
 import statsScreen from './stats-screen.js';
 
 const template = `
