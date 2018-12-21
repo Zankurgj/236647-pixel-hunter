@@ -1,6 +1,6 @@
 import {addScreenElement} from '../util.js';
 
-const template = `
+const templateScreen = `
 <header class="header">
   <button class="back">
     <span class="visually-hidden">Вернуться к началу</span>
@@ -112,6 +112,6 @@ const template = `
     </tr>
   </table>
 </section>`;
-const element = addScreenElement(template);
+const screenElement = addScreenElement(templateScreen);
 
-export default element;
+export default screenElement;

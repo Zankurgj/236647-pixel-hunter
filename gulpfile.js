@@ -55,12 +55,6 @@ gulp.task(`sprite`, () => {
     .pipe(gulp.dest(`build/img`));
 });
 
-gulp.task(`scripts`, () => {
-  return gulp.src(`js/**/*.js`).
-    pipe(plumber()).
-    pipe(gulp.dest(`build/js/`));
-});
-
 gulp.task(`imagemin`, [`copy`], () => {
   return gulp.src(`build/img/**/*.{jpg,png,gif}`).
     pipe(imagemin([

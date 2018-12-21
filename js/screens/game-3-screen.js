@@ -1,7 +1,7 @@
 import {addScreenElement, generateScreen} from '../util.js';
 import statsScreen from './stats-screen.js';
 
-const template = `
+const templateScreen = `
 <header class="header">
   <button class="back">
     <span class="visually-hidden">Вернуться к началу</span>
@@ -46,8 +46,8 @@ const template = `
   </ul>
 </section>`;
 
-const element = addScreenElement(template);
-const answerBtn = element.querySelectorAll(`.game__option`);
+const screenElement = addScreenElement(templateScreen);
+const answerBtn = screenElement.querySelectorAll(`.game__option`);
 
 Array.from(answerBtn).forEach((el) => {
   el.addEventListener(`click`, () => {
@@ -55,4 +55,4 @@ Array.from(answerBtn).forEach((el) => {
   });
 });
 
-export default element;
+export default screenElement;

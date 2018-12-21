@@ -1,8 +1,7 @@
 import {addScreenElement, generateScreen} from '../util.js';
 import gameTwoScreen from './game-2-screen.js';
 
-
-const template = `
+const templateScreen = `
 <header class="header">
   <button class="back">
     <span class="visually-hidden">Вернуться к началу</span>
@@ -60,22 +59,22 @@ const template = `
   </ul>
 </section>`;
 
-const element = addScreenElement(template);
+const screenElement = addScreenElement(templateScreen);
 
-const inputEl = element.querySelectorAll(`[type="radio"]`);
+const inputElements = screenElement.querySelectorAll(`[type="radio"]`);
 
 const checkInput = () => {
-  const checkedInput = [].filter.call(inputEl, (e) => e.checked);
+  const checkedInput = [].filter.call(inputElements, (e) => e.checked);
   if (checkedInput.length > 1) {
     generateScreen(gameTwoScreen);
   }
 };
 
-Array.from(inputEl).forEach((el) => {
-  el.addEventListener(`click`, () => {
+Array.from(inputElements).forEach((inputElement) => {
+  inputElement.addEventListener(`click`, () => {
     checkInput();
   });
 });
 
 
-export default element;
+export default screenElement;
