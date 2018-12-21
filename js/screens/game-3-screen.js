@@ -47,10 +47,10 @@ const templateScreen = `
 </section>`;
 
 const screenElement = addScreenElement(templateScreen);
-const answerBtn = screenElement.querySelectorAll(`.game__option`);
+const answerButtons = screenElement.querySelectorAll(`.game__option`);
 
-Array.from(answerBtn).forEach((el) => {
-  el.addEventListener(`click`, () => {
+Array.from(answerButtons).forEach((answerButton) => {
+  answerButton.addEventListener(`click`, () => {
     generateScreen(statsScreen);
   });
 });

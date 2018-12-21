@@ -64,7 +64,7 @@ const screenElement = addScreenElement(templateScreen);
 const inputElements = screenElement.querySelectorAll(`[type="radio"]`);
 
 const checkInput = () => {
-  const checkedInput = [].filter.call(inputElements, (e) => e.checked);
+  const checkedInput = [].filter.call(inputElements, (inputElement) => inputElement.checked);
   if (checkedInput.length > 1) {
     generateScreen(gameTwoScreen);
   }

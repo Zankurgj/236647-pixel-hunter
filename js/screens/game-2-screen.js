@@ -52,8 +52,8 @@ const screenElement = addScreenElement(templateScreen);
 
 const answerButtons = screenElement.querySelectorAll(`.game__answer`);
 
-Array.from(answerButtons).forEach((el) => {
-  el.addEventListener(`click`, () => {
+Array.from(answerButtons).forEach((answerButton) => {
+  answerButton.addEventListener(`click`, () => {
     generateScreen(gameThreeScreen);
   });
 });
