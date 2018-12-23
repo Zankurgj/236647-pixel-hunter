@@ -1,7 +1,7 @@
 import {addScreenElement, generateScreen} from '../util.js';
 import rulesScreen from './rules-screen.js';
 
-const template = `
+const templateScreen = `
 <section class="greeting central--blur">
   <img class="greeting__logo" src="img/logo_ph-big.svg" width="201" height="89" alt="Pixel Hunter">
   <div class="greeting__asterisk asterisk"><span class="visually-hidden">Я просто красивая звёздочка</span>*</div>
@@ -23,11 +23,11 @@ const template = `
   </button>
 </section>`;
 
-const element = addScreenElement(template);
-const agreeButton = element.querySelector(`.greeting__continue`);
+const screenElement = addScreenElement(templateScreen);
+const agreeButton = screenElement.querySelector(`.greeting__continue`);
 
 agreeButton.addEventListener(`click`, () => {
   generateScreen(rulesScreen);
 });
 
-export default element;
+export default screenElement;

@@ -1,7 +1,7 @@
 import {addScreenElement, generateScreen} from '../util.js';
 import gameOneScreen from './game-1-screen.js';
 
-const template = `
+const templateScreen = `
 <header class="header">
   <button class="back">
     <span class="visually-hidden">Вернуться к началу</span>
@@ -30,10 +30,10 @@ const template = `
   </form>
 </section>`;
 
-const element = addScreenElement(template);
+const screenElement = addScreenElement(templateScreen);
 
-const nameInput = element.querySelector(`.rules__input`);
-const agreeButton = element.querySelector(`.rules__button`);
+const nameInput = screenElement.querySelector(`.rules__input`);
+const agreeButton = screenElement.querySelector(`.rules__button`);
 
 nameInput.addEventListener(`keyup`, () => {
   if (nameInput.value.trim()) {
@@ -47,4 +47,4 @@ agreeButton.addEventListener(`click`, () => {
   generateScreen(gameOneScreen);
 });
 
-export default element;
+export default screenElement;
