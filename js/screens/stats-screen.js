@@ -112,6 +112,7 @@ const templateScreen = `
     </tr>
   </table>
 </section>`;
+
 const screenElement = addScreenElement(templateScreen);
 
 export default screenElement;
